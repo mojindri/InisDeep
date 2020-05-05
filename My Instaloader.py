@@ -3,8 +3,8 @@ import os
 import instaloader
 L = instaloader.Instaloader()
 
-USER = 'mo_jix'
-PASSWORD = 'lplnhldk5@'
+USER = 'YOUR IG USERNAME'
+PASSWORD = 'YOUR PASS'
 PROFILE = USER
 CONFIGFILE= USER
 
@@ -14,8 +14,6 @@ if os.path.exists(CONFIGFILE) ==False:
 
 # Your preferred way of logging in:
 L.load_session_from_file(USER,USER)
-#L.test_login()
-#profile = instaloader.Profile.from_username(L.context, PROFILE)
 def createDir(dir):
     if os.path.exists(dir)==False:
         os.makedirs(dir)
